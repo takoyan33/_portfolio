@@ -1,84 +1,270 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: サイトURL#">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>サイトタイトル</title>
-    <meta name="description" content="" />
-    <!--PC：１２０文字以内 スマホ：70文字以内-->
-    <!--ここからOGP-->
-    <meta property="og:url" content=" ページの URL" />
-    <meta property="og:type" content=" ページの種類" />
-    <!--website /blog 下層→article-->
-    <meta property="og:title" content=" ページの タイトル" />
-    <meta property="og:description" content=" ページのディスクリプション" />
-    <meta property="og:site_name" content="サイト名" />
-    <meta property="og:image" content=" サムネイル画像の URL" />
-    <!--//OGPここまで-->
-    <link rel="stylesheet" href="common/css/style.css" />
-  </head>
 
-  <body>
-    <!--ここからヘッダー-->
-    <header class="header">
-      <div class="header__inner">
-        <h1 class="header__ttl"></h1>
-        <!--ナビゲーション-->
-        <nav class="nav">
-          <ul class="nav__lists">
-            <li class="nav__list"><a href="#">メニュー</a></li>
-            <li class="nav__list"><a href="#">メニュー</a></li>
-            <li class="nav__list"><a href="#">メニュー</a></li>
-            <li class="nav__list"><a href="#">メニュー</a></li>
-          </ul>
-        </nav>
-        <!--hamburgerボタンー-->
-        <div class="hamburger-btn">
-          <span class="hamburger-btn__parts -top"></span>
-          <span class="hamburger-btn__parts -middle"></span>
-          <span class="hamburger-btn__parts -bottom"></span>
-        </div>
-        <!--hamburgerメニュー-->
-        <nav class="hamburger">
-          <ul class="hamburger__lists">
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-            <li class="hamburger__list">
-              <a class="hamburger__link" href="#">ハンバーガーメニュー</a>
-            </li>
-          </ul>
-        </nav>
-        <!--//ここまでナビゲーション-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORWARD DESGIN</title>
+  <meta name="description" content="" />
+  <!--PC：１２０文字以内 スマホ：70文字以内-->
+  <!--ここからOGP-->
+  <meta property="og:url" content=" ページの URL" />
+  <meta property="og:type" content=" ページの種類" />
+  <!--website /blog 下層→article-->
+  <meta property="og:title" content=" FORWORD DESGIN" />
+  <meta property="og:description" content=" ページのディスクリプション" />
+  <meta property="og:site_name" content="FORWORD DESGIN" />
+  <meta property="og:image" content=" サムネイル画像の URL" />
+  <!--//OGPここまで-->
+  <link rel="stylesheet" href="common/css/style.css" />
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'owg3too',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'owg3too',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <!--ここからヘッダー-->
+  <header class="header sp">
+    <div class="header__inner">
+      <h1 class="header__ttl"></h1>
+      <!--ナビゲーション-->
+      <nav class="nav">
+        <ul class="nav__lists">
+          <!-- <li class="nav__list"><a href="#">メニュー</a></li>
+          <li class="nav__list"><a href="#">メニュー</a></li>
+          <li class="nav__list"><a href="#">メニュー</a></li>
+          <li class="nav__list"><a href="#">メニュー</a></li> -->
+        </ul>
+      </nav>
+      <!--hamburgerボタンー-->
+      <div class="hamburger-btn">
+        <span class="hamburger-btn__parts -top"></span>
+        <span class="hamburger-btn__parts -middle"></span>
+        <span class="hamburger-btn__parts -bottom"></span>
       </div>
-    </header>
-    <!--//ここまでヘッダー-->
+      <!--hamburgerメニュー-->
+      <nav class="hamburger">
+        <ul class="hamburger__lists">
+          <li class="hamburger__list" data-aos="fade-up">
+            <a class="hamburger__link" href="#ABOUT">ABOUT</a>
+          </li>
+          <li class="hamburger__list" data-aos="fade-up">
+            <a class="hamburger__link" href="#WORKS">WORKS</a>
+          </li>
+          <li class="hamburger__list" data-aos="fade-up">
+            <a class="hamburger__link" href="#CONTACT">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <!--//ここまでナビゲーション-->
+    </div>
+  </header>
 
-    
+  <div class="loader-wrap">
+    <div class="loader">Loading...</div>
+  </div>
+ 
+ 
 
-    <!--ここからメインコンテンツ-->
-    <main class="main">
-      <!--ここからファーストビュー -->
-      <div class="fv"></div>
-      <!--//ここまでファーストビュー -->
-      <!--ここからセクション （セクションの数だけコピーして使う）-->
-      <section class="section">
-        <h2 class="section__ttl"></h2>
-        <div class="section__inner">※ここにコンテンツ。</div>
-      </section>
-      <!--//ここまでセクション-->
-    </main>
-    <!--ここからフッター-->
-    <footer class="footer"></footer>
-    <!--//ここまでフッター-->
-    <!--jQuery読み込み-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="common/js/script.js"></script>
-  </body>
+<div class="fv">
+
+  <div class="max_width"  data-aos="fade-up">
+  <h1 class="fv_title" id="typing"></h1>
+  </div>
+
+</div>
+
+
+
+  <!--//ここまでヘッダー-->
+
+  <div class="about gray_bg" id="CONTACT">
+
+    <div class="max_width">
+
+      <h1 class="section_title" data-aos="fade-up">ABOUT</h1>
+
+      <h2 class="about_name" data-aos="fade-up">阿部舜平</h2>
+      <h3 class="about_al_name" data-aos="fade-up">ABE SHMUPEI</h3>
+      <p class="about_text" data-aos="fade-up">2001年生まれ。群馬出身。3歳の時に、北海道に引っ越す。現在北星学園大学1年生。<br>現在はWEBサイト制作・WEBデザイン制作などを行う
+      </p>
+    </div>
+
+  </div>
+
+  <div class="work" id="WORKS">
+
+    <div class="max_width">
+
+      <h1 class="section_title" data-aos="fade-up">WORKS</h1>
+
+
+      <h2 class="work_title" data-aos="fade-up">WEBサイト制作</h2>
+
+      <div class="flx">
+
+        <div class="flx_el_3" data-aos="fade-up">
+
+          <a href="">
+
+            <img src="common/image/lutena.png" alt="制作実績の画像" class="work_img">
+
+            <p class="work_text">Lutena</p>
+
+            <span class="work_class">Website</span>
+          </a>
+
+        </div>
+        <div class="flx_el_3" data-aos="fade-up">
+          <a href="">
+
+            <img src="common/image/K's Link.png" alt="制作実績の画像" class="work_img">
+
+            <p class="work_text">SEO・MEO対策ページ</p>
+
+            <span class="work_class">Website</span>
+          </a>
+        </div>
+        <div class="flx_el_3" data-aos="fade-up">
+          <a href="">
+            <img src="common/image/Heat AI Gate.png" alt="制作実績の画像" class="work_img">
+
+            <p class="work_text">Heat AI Gate</p>
+
+            <span class="work_class">Website</span>
+
+          </a>
+        </div>
+
+      </div>
+
+
+
+      <h2 class="work_title" data-aos="fade-up">デザイン制作</h2>
+
+      <div class="flx">
+
+        <div class="flx_el_3" data-aos="fade-up">
+          <a href="">
+            <img src="common/image/enkiri.png" alt="制作実績の画像" class="work_img">
+
+            <p class="work_text">縁切り神社バナー</p>
+
+            <span class="work_class" id="work_red">バナー</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="contact gray_bg" id="CONTACT">
+
+    <div class="max_width">
+
+      <h1 class="section_title" data-aos="fade-up">CONTACT</h1>
+      <p class="about_text" data-aos="fade-up">お気軽に下記メールアドレス・TwitterのDMにてお問い合わせください
+      </p>
+
+      <div class="flx">
+
+
+        <div class="flx_el" data-aos="fade-up">
+
+          <a href="https://twitter.com/sym5hey" target="_blank">
+            <p><img src="common/image/twitter_icon.svg" alt="twitterのアイコン" class="logo_sns"></p>
+          </a>
+
+
+        </div>
+
+        <div class="flx_el" data-aos="fade-up">
+          <a href="mailto:harrier2070@gmail.com" target="_blank">
+            <p><img src="common/image/mail.icon.svg" alt="メールのアイコン" class="logo_sns"></p>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--ここからフッター-->
+  <footer class="footer">
+    <p class="footer_text">©︎ 2021 Fowrod Desgin</p>
+  </footer>
+  <!--//ここまでフッター-->
+  <!--jQuery読み込み-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="common/js/script.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
