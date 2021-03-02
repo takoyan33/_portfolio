@@ -49,4 +49,4 @@ const typing = (element, sentence) => {
   });
 }
 
-typing('#typing', 'FORWARD DESIGN.');
+typing('#typing', 'ROUND DESIGN.');
