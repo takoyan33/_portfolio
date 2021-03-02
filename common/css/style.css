@@ -36,6 +36,10 @@ a {
   text-decoration: none;
 }
 
+.header {
+  font-family: futura-pt-bold, sans-serif;
+}
+
 @media screen and (max-width: 559px) {
   .header {
     background-color: rgba(51, 51, 51, 0.7);
@@ -56,6 +60,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
+  position: fixed;
+  z-index: 99;
 }
 
 .nav {
@@ -138,6 +144,8 @@ a {
 
 @media screen and (max-width: 559px) {
   .hamburger {
+    font-family: futura-pt-bold, sans-serif;
+    font-size: 16px;
     display: block;
     position: fixed;
     z-index: 10;
@@ -182,6 +190,7 @@ a {
   .hamburger__link {
     text-decoration: none;
     color: #ffffff;
+    font-family: futura-pt-bold, sans-serif;
   }
 }
 
@@ -361,12 +370,6 @@ a:hover {
     text-align: center;
     margin: 10px auto;
   }
-  .about_text {
-    text-align: center;
-    line-height: 1.6;
-    font-size: 16px;
-    margin: 10px auto;
-  }
   .contact {
     height: 750px;
   }
@@ -403,6 +406,12 @@ a:hover {
   .flx_el {
     width: 100%;
     margin: 20px auto;
+  }
+  .about_text {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 40px auto;
   }
 }
 
