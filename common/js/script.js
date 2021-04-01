@@ -27,18 +27,18 @@ $(function () {
 });
 
 
-$(function(){
-	var loader = $('.loader-wrap');
+$(function () {
+  var loader = $('.loader-wrap');
 
-	//ページの読み込みが完了したらアニメーションを非表示
-	$(window).on('load',function(){
-		loader.fadeOut();
-	});
+  //ページの読み込みが完了したらアニメーションを非表示
+  $(window).on('load', function () {
+    loader.fadeOut();
+  });
 
-	//ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
-	setTimeout(function(){
-		loader.fadeOut();
-	},3000);
+  //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+  setTimeout(function () {
+    loader.fadeOut();
+  }, 3000);
 });
 
 const typing = (element, sentence) => {
@@ -49,4 +49,42 @@ const typing = (element, sentence) => {
   });
 }
 
-typing('#typing', 'ROUND DESIGN.');
+typing('#typing', 'TO YOU DESIGN.');
+
+$(function () {
+
+  // モーダルウィンドウが開くときの処理    
+  $(".modalOpen").click(function () {
+
+    var navClass = $(this).attr("class"),
+      href = $(this).attr("href");
+
+    $(href).fadeIn();
+    $(this).addClass("open");
+    return false;
+  });
+
+  // モーダルウィンドウが閉じるときの処理    
+  $(".modalClose").click(function () {
+    $(this).parents(".modal").fadeOut();
+    $(".modalOpen").removeClass("open");
+    return false;
+  });
+
+});
+
+// ウィンドウを開く
+$('.js-modal-open').each(function () {
+  $(this).on('click', function () {
+    var target = $(this).data('target');
+    var modal = document.getElementById(target);
+    $(modal).fadeIn(300);
+    return false;
+  });
+});
+
+// ウィンドウを閉じる
+$('.js-modal-close').on('click', function () {
+  $('.js-modal').fadeOut(300);
+  return false;
+});
